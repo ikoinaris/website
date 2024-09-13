@@ -1,0 +1,57 @@
+.contact-container {
+  max-width: 1200px;
+  margin: 100px auto;
+  text-align: center;
+  color: white;
+}
+
+.contact-container h1 {
+  font-size: 36px;
+  color: lightgreen;
+  margin-bottom: 40px;
+}
+
+/* Grid layout for social media icons (1 row with 4 columns) */
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 1 row with 4 columns */
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Social media card styling */
+.social-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-card:hover {
+  transform: scale(1.1);
+}
+
+/* Social media icon styling */
+.social-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Social media name */
+.social-card p {
+  font-size: 18px;
+  color: white;
+  margin: 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .social-grid {
+    grid-template-columns: 1fr; /* Stack icons vertically on smaller screens */
+  }
+}

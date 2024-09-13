@@ -1,0 +1,65 @@
+/* About container with flexbox */
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: steelblue; /* Background matches theme */
+  color: white;
+}
+
+/* Profile picture */
+.profile-picture img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid midnightblue; /* Circular frame with midnight blue border */
+  margin-right: 30px; /* Spacing between image and text */
+}
+
+/* Text section */
+.about-text {
+  max-width: 700px;
+}
+
+.about-text h1 {
+  font-size: 36px;
+  color: lightgreen;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: white;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-picture img {
+    margin-right: 0;
+    margin-bottom: 20px; /* Add spacing below image on mobile */
+    width: 200px; /* Reduce size of image on smaller screens */
+    height: 200px;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-text h1 {
+    font-size: 28px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+  }
+}

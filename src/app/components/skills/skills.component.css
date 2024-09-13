@@ -1,0 +1,114 @@
+.carousel-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 100px auto;
+  color: white;
+  text-align: center;
+}
+
+.carousel-slide {
+  display: none;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-slide.active {
+  display: block;
+  opacity: 1;
+}
+
+h2 {
+  font-size: 36px;
+  color: lightgreen;
+  margin-bottom: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: scale(1.1);
+}
+
+.skill-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.skill-card p {
+  font-size: 18px;
+  color: white;
+  margin: 0;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 20px; /* Wider padding for a larger arrow button */
+  font-size: 40px; /* Larger font size */
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: white;
+  border-radius: 50%; /* Make the arrow buttons circular */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4); /* Shadow for a nice 3D effect */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+  z-index: 10; /* Ensure arrows are on top */
+}
+
+.prev {
+  left: -100px;
+}
+
+.next {
+  right: -100px;
+}
+
+.prev:hover, .next:hover {
+  background-color: lightgreen; /* Color change on hover */
+  transform: scale(1.2); /* Grow arrow on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .prev, .next {
+    font-size: 32px; /* Adjust arrow size for smaller screens */
+    padding: 15px;
+    left: -70px; /* Bring arrows closer for smaller screens */
+    right: -70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .prev, .next {
+    font-size: 28px; /* Further reduce arrow size for very small screens */
+    padding: 12px;
+    left: -50px;
+    right: -50px;
+    position: initial;
+  }
+}

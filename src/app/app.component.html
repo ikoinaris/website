@@ -1,0 +1,23 @@
+<header>
+  <nav>
+    <ul class="nav-items">
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/about">About</a></li>
+      <li><a routerLink="/skills">Skills</a></li>
+<!--      <li><a routerLink="/projects">Projects</a></li>-->
+      <li><a routerLink="/contact">Contact</a></li>
+    </ul>
+    <div class="hamburger-menu" (click)="toggleMenu()">
+      &#9776;
+    </div>
+    <div class="mobile-menu" [class.active]="menuOpen">
+      <ul>
+        <li><a routerLink="/" (click)="toggleMenu()">Home</a></li>
+        <li><a routerLink="/about" (click)="toggleMenu()">About</a></li>
+        <li><a routerLink="/skills" (click)="toggleMenu()">Skills</a></li>
+        <li><a routerLink="/contact" (click)="toggleMenu()">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<router-outlet></router-outlet>

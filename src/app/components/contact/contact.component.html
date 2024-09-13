@@ -1,0 +1,11 @@
+<div class="contact-container">
+  <h1>Feel free to contact me!</h1>
+  <div class="social-grid">
+    <div class="social-card" *ngFor="let media of socialMedia">
+      <a [href]="media.link" target="_blank">
+        <img [src]="media.icon" [alt]="media.name" class="social-icon" />
+      </a>
+      <p>{{ media.name }}</p>
+    </div>
+  </div>
+</div>

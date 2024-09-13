@@ -1,0 +1,16 @@
+<div class="carousel-container">
+  <div class="carousel-slide" *ngFor="let category of skillCategories; let i = index"
+       [class.active]="i === currentSlideIndex">
+    <h2>{{ category.name }}</h2>
+    <div class="skills-grid">
+      <div class="skill-card" *ngFor="let skill of category.skills">
+        <img [src]="skill.icon" [alt]="skill.name" class="skill-icon" />
+        <p>{{ skill.name }}</p>
+      </div>
+    </div>
+  </div>
+  <div>
+    <a class="prev" (click)="previousSlide()">&#10094;</a>
+    <a class="next" (click)="nextSlide()">&#10095;</a>
+  </div>
+</div>
