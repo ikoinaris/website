@@ -40,17 +40,10 @@ export class SkillsComponent {
         { name: 'MySQL', icon: 'assets/skills/mysql.png' },
         { name: 'MongoDB', icon: 'assets/skills/mongodb.png' }
       ]
-    },
-    { name: 'Other', skills: [
-        { name: 'AWS', icon: 'assets/skills/aws.png' },
-        { name: 'Scrum', icon: 'assets/skills/scrum.png' },
-        { name: 'Agile', icon: 'assets/skills/agile.png' }
-      ] }
+    }
   ];
 
   currentSlideIndex = 0;
-
-  ngOnInit() {}
 
   nextSlide() {
     this.currentSlideIndex = (this.currentSlideIndex + 1) % this.skillCategories.length;

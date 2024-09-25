@@ -1,23 +1,20 @@
-/* Center the content horizontally and vertically */
 .home-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: steelblue; /* Same background color */
+  background-color: steelblue;
 }
 
-/* Styling for the profile picture */
 .profile-picture img {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  border: 5px solid midnightblue; /* Circular frame with midnight blue border */
+  border: 5px solid midnightblue;
 }
 
-/* Profile details styling */
 .profile-details {
-  margin-left: 20px; /* Space between image and text */
+  margin-left: 20px;
   color: white;
 }
 
@@ -37,7 +34,7 @@
 
 @media (max-width: 600px) {
   .home-container {
-    flex-direction: column; /* Stack image and text vertically */
+    flex-direction: column;
   }
 
   .profile-details {

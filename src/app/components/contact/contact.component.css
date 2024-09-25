@@ -11,10 +11,9 @@
   margin-bottom: 40px;
 }
 
-/* Grid layout for social media icons (1 row with 4 columns) */
 .social-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 1 row with 4 columns */
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   justify-items: center;
 }
@@ -34,7 +33,6 @@
   transform: scale(1.1);
 }
 
-/* Social media icon styling */
 .social-icon {
   width: 80px;
   height: 80px;
@@ -42,16 +40,14 @@
   border-radius: 5px;
 }
 
-/* Social media name */
 .social-card p {
   font-size: 18px;
   color: white;
   margin: 0;
 }
 
-/* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .social-grid {
-    grid-template-columns: 1fr; /* Stack icons vertically on smaller screens */
+    grid-template-columns: 1fr;
   }
 }
