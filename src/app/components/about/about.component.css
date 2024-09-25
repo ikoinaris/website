@@ -35,6 +35,22 @@
   color: white;
 }
 
+.download-btn {
+  background-color: midnightblue;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: lightblue;
+}
+
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
