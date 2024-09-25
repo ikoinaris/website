@@ -20,6 +20,7 @@ header {
   display: flex;
   justify-content: flex-end;
   margin-right: 20px;
+  margin-top: 20px;
 }
 
 .nav-items li {
