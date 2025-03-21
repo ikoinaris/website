@@ -24,14 +24,14 @@
   border: 5px solid #66fcf1;
 }
 
-.text-content {
-  max-width: 600px;
+.about-text {
+  max-width: 700px;
 }
 
-.text-content h1 {
-  font-size: 2rem;
+.about-text h1 {
+  font-size: 36px;
   color: #66fcf1;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .text-content p {
@@ -55,4 +55,30 @@
 .download-btn:hover {
   background-color: #66fcf1;
   transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-picture img {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-text h1 {
+    font-size: 28px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+  }
 }
