@@ -1,0 +1,98 @@
+/* Header styles */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: flex-end; /* Align the menu to the right */
+  padding: 10px 20px;
+}
+
+/* Nav styles */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-items li {
+  margin-left: 20px; /* Space between menu items */
+}
+
+.nav-items a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.nav-items a:hover {
+  color: lightgreen; /* Lighter tone on hover */
+}
+
+/* Hamburger menu for mobile view */
+.hamburger-menu {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu.active {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-menu ul li {
+  margin-bottom: 10px;
+}
+
+.mobile-menu ul li a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.mobile-menu ul li a:hover {
+  color: lightgreen;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-items {
+    display: none; /* Hide desktop menu */
+  }
+
+  .hamburger-menu {
+    display: block; /* Show hamburger menu */
+  }
+
+  .mobile-menu ul li:last-child {
+    margin-bottom: 0;
+  }
+}

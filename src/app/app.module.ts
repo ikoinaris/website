@@ -10,6 +10,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 import {NgxTypewriterModule} from "ngx-typewriter";
 
 @NgModule({
@@ -26,7 +27,8 @@ import {NgxTypewriterModule} from "ngx-typewriter";
     AppRoutingModule,
     BrowserAnimationsModule,
     NgbModule,
-    NgxTypewriterModule
+    NgxTypewriterModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

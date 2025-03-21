@@ -43,7 +43,8 @@ export class HomeComponent implements OnInit {
   }
 
   typewriterTexts: string[] = [
-    'Software Engineer',
+    'Java Software Engineer',
+    'Java Tutor',
     'Certified Scrum Master'
   ];
 

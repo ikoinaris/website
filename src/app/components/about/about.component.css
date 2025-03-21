@@ -1,78 +1,58 @@
 .about-container {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  max-width: 1200px;
-  margin: 100px auto;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0a0a0a, #004d40);
+  color: white;
   padding: 20px;
-  background-color: steelblue;
-  color: white;
+  text-align: left;
 }
 
-.profile-picture img {
-  width: 300px;
-  height: 300px;
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  max-width: 900px;
+}
+
+.profile-pic {
   border-radius: 50%;
-  border: 5px solid midnightblue;
-  margin-right: 30px;
+  width: 180px;
+  height: 180px;
+  border: 5px solid #66fcf1;
 }
 
-/* Text section */
-.about-text {
-  max-width: 700px;
+.text-content {
+  max-width: 600px;
 }
 
-.about-text h1 {
-  font-size: 36px;
-  color: lightgreen;
-  margin-bottom: 20px;
+.text-content h1 {
+  font-size: 2rem;
+  color: #66fcf1;
+  margin-bottom: 10px;
 }
 
-.about-text p {
-  font-size: 18px;
+.text-content p {
+  margin: 10px 0;
   line-height: 1.6;
-  margin-bottom: 15px;
-  color: white;
 }
 
 .download-btn {
-  background-color: midnightblue;
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 5px;
-  text-decoration: none;
+  display: inline-block;
   margin-top: 20px;
-  transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  background-color: #004d99;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .download-btn:hover {
-  background-color: lightblue;
-}
-
-@media (max-width: 768px) {
-  .about-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .profile-picture img {
-    margin-right: 0;
-    margin-bottom: 20px;
-    width: 200px;
-    height: 200px;
-  }
-
-  .about-text {
-    text-align: center;
-  }
-
-  .about-text h1 {
-    font-size: 28px;
-  }
-
-  .about-text p {
-    font-size: 16px;
-  }
+  background-color: #66fcf1;
+  transform: scale(1.05);
 }

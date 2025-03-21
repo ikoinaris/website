@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class SkillsComponent {
 
   skillCategories = [
-    { name: 'Languages', skills: [
+    { name: 'Programming Languages', skills: [
         { name: 'Java', icon: 'assets/skills/java.png' },
         { name: 'Typescript', icon: 'assets/skills/typescript.png' },
         { name: 'JavaScript', icon: 'assets/skills/javascript.png' },

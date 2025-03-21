@@ -1,8 +1,11 @@
 .contact-container {
-  max-width: 1200px;
-  margin: 100px auto;
+  max-width: 800px;
+  margin: 80px auto;
   text-align: center;
   color: white;
+  background: inherit; /* Use the global background */
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .contact-container h1 {
@@ -18,7 +21,6 @@
   justify-items: center;
 }
 
-/* Social media card styling */
 .social-card {
   display: flex;
   flex-direction: column;
@@ -44,6 +46,64 @@
   font-size: 18px;
   color: white;
   margin: 0;
+}
+
+.contact-form-container {
+  margin-top: 40px;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.8); /* Matching the background color */
+  border-radius: 10px;
+  max-width: 500px; /* Smaller width */
+  margin-left: auto; /* Centering horizontally */
+  margin-right: auto; /* Centering horizontally */
+  color: white; /* Matching font color */
+}
+
+.contact-form-container h2 {
+  font-size: 28px; /* Consistent font size */
+  color: lightgreen; /* Matching font color */
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 18px; /* Matching font size */
+  color: lightgreen;
+  display: block;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #333;
+  color: white;
+}
+
+.form-group textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: lightgreen;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
 }
 
 @media (max-width: 768px) {

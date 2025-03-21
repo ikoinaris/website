@@ -1,114 +1,127 @@
 .carousel-container {
   position: relative;
-  max-width: 1000px;
-  margin: 100px auto;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background: linear-gradient(180deg, #0a0a0a, #004d40);
   color: white;
-  text-align: center;
+  padding: 80px 0;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .carousel-slide {
   display: none;
-  transition: opacity 1s ease-in-out;
+  text-align: center;
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  opacity: 0;
+  transform: translateX(-100%);
 }
 
 .carousel-slide.active {
   display: block;
   opacity: 1;
+  transform: translateX(0);
 }
 
 h2 {
-  font-size: 36px;
-  color: lightgreen;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #00b894;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 0;
 }
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(4, 1fr); /* 4 skills per row */
   gap: 20px;
-  justify-items: center;
-  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1200px; /* Optional to limit the width of the grid */
 }
 
 .skill-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 20px;
+  text-align: center;
+  background-color: #003333;
+  padding: 15px;
   border-radius: 10px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .skill-card:hover {
   transform: scale(1.1);
+  background-color: #005555;
 }
 
 .skill-icon {
   width: 80px;
   height: 80px;
   margin-bottom: 10px;
-  border-radius: 5px;
 }
 
 .skill-card p {
-  font-size: 18px;
-  color: white;
+  color: #e0e0e0;
+  font-size: 1rem;
   margin: 0;
 }
 
-.prev, .next {
-  cursor: pointer;
+/* Navigation Arrows */
+.prev,
+.next {
   position: absolute;
   top: 50%;
-  padding: 20px;
-  font-size: 40px;
+  transform: translateY(-50%);
+  color: #66fcf1;
+  font-size: 2rem;
   font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
   border-radius: 50%;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  transition: background 0.3s ease, transform 0.3s ease;
   z-index: 10;
 }
 
+.prev:hover,
+.next:hover {
+  background: rgba(0, 128, 128, 0.8);
+  transform: scale(1.1);
+}
+
 .prev {
-  left: -100px;
+  left: 10px;
 }
 
 .next {
-  right: -100px;
+  right: 10px;
 }
 
-.prev:hover, .next:hover {
-  background-color: lightgreen; /* Color change on hover */
-  transform: scale(1.2); /* Grow arrow on hover */
-}
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
 
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
   .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust grid columns for small screens */
+    gap: 15px;
   }
 
-  .prev, .next {
-    font-size: 32px; /* Adjust arrow size for smaller screens */
-    padding: 15px;
-    left: -70px; /* Bring arrows closer for smaller screens */
-    right: -70px;
-  }
-}
-
-@media (max-width: 480px) {
-  .skills-grid {
-    grid-template-columns: 1fr;
+  .skill-icon {
+    width: 60px;
+    height: 60px;
   }
 
-  .prev, .next {
-    font-size: 28px; /* Further reduce arrow size for very small screens */
-    padding: 12px;
-    left: -50px;
-    right: -50px;
-    position: initial;
+  .prev,
+  .next {
+    font-size: 1.5rem;
+    padding: 8px 16px;
   }
 }

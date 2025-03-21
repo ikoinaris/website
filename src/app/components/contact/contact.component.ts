@@ -14,4 +14,17 @@ export class ContactComponent {
     { name: 'GitHub', icon: 'assets/contact/git.png', link: 'https://github.com/ikoinaris' }
   ];
 
+  // Submit function for the contact form
+  onSubmit(contactForm: any) {
+    if (contactForm.valid) {
+      console.log('Form Submitted!', contactForm.value);
+      // You can process the form data here, like sending it to an API
+
+      // After submission, reset the form
+      contactForm.reset();
+    } else {
+      console.log('Form is invalid');
+    }
+  }
+
 }
