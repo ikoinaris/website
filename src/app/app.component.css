@@ -115,14 +115,18 @@ nav {
 /* Responsive Design */
 @media (max-width: 768px) {
   .nav-items {
-    display: none; /* Hide desktop menu */
+    display: none;
   }
 
   .hamburger-menu {
-    display: block; /* Show hamburger menu */
+    display: block;
   }
 
   .mobile-menu ul li:last-child {
     margin-bottom: 0;
+  }
+
+  .social-sidebar {
+    display: none;
   }
 }

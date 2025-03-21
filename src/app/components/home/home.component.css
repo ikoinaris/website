@@ -31,3 +31,30 @@
   color: lightgreen;
   font-weight: bold;
 }
+
+.social-media {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .typewriter {
+    display: none;
+  }
+  
+  .social-media {
+    display: inline;
+  }
+
+  .social-link {
+    display: inline-block;
+    margin: 10px 0;
+  }
+
+  .social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+    padding: 5px;
+  }
+}
