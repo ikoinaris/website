@@ -7,11 +7,11 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
-import { ContactComponent } from './components/contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import {NgxTypewriterModule} from "ngx-typewriter";
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import {NgxTypewriterModule} from "ngx-typewriter";
     AboutComponent,
     SkillsComponent,
     ProjectsComponent,
-    ContactComponent
+    ServicesComponent
   ],
   imports: [
     BrowserModule,

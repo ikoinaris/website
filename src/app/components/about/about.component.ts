@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AboutComponent {
   downloadResume() {
     const link = document.createElement('a');
-    link.href = 'assets/resume.pdf'; // Ensure your resume file is in the `assets` folder.
+    link.href = 'assets/resume.pdf';
     link.download = 'Ioannis_Koinaris_Resume.pdf';
     link.click();
   }
