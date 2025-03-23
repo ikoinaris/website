@@ -9,36 +9,37 @@ export class SkillsComponent {
 
   skillCategories = [
     { name: 'Programming Languages', skills: [
-        { name: 'Java', icon: 'assets/skills/java.png' },
-        { name: 'Typescript', icon: 'assets/skills/typescript.png' },
-        { name: 'JavaScript', icon: 'assets/skills/javascript.png' },
-        { name: 'HTML', icon: 'assets/skills/html.png' },
-        { name: 'CSS', icon: 'assets/skills/css.png' },
-        { name: 'Python', icon: 'assets/skills/python.png' }
+        { name: 'Java', icon: 'assets/skills/languages/java.png' },
+        { name: 'Typescript', icon: 'assets/skills/languages/typescript.png' },
+        { name: 'JavaScript', icon: 'assets/skills/languages/javascript.png' },
+        { name: 'HTML', icon: 'assets/skills/languages/html.png' },
+        { name: 'CSS', icon: 'assets/skills/languages/css.png' },
+        { name: 'Python', icon: 'assets/skills/languages/python.png' }
       ]
     },
     { name: 'Frameworks', skills: [
-        { name: 'Spring', icon: 'assets/skills/spring.png' },
-        { name: 'Quarkus', icon: 'assets/skills/quarkus.png' },
-        { name: 'Angular', icon: 'assets/skills/angular.png' },
-        { name: 'React', icon: 'assets/skills/react.png' },
-        { name: 'Node', icon: 'assets/skills/node.png' }
+        { name: 'Spring', icon: 'assets/skills/frameworks/spring.png' },
+        { name: 'Quarkus', icon: 'assets/skills/frameworks/quarkus.png' },
+        { name: 'Angular', icon: 'assets/skills/frameworks/angular.png' },
+        { name: 'React', icon: 'assets/skills/frameworks/react.png' },
+        { name: 'Node', icon: 'assets/skills/frameworks/node.png' }
       ]
     },
     { name: 'Software', skills: [
-        { name: 'IntelliJ', icon: 'assets/skills/intellij.png' },
-        { name: 'VS Code', icon: 'assets/skills/vscode.png' },
-        { name: 'Eclipse', icon: 'assets/skills/eclipse.png' },
-        { name: 'Git', icon: 'assets/skills/github.png' },
-        { name: 'Docker', icon: 'assets/skills/docker.png' },
-        { name: 'Jenkins', icon: 'assets/skills/jenkins.png' },
-        { name: 'Postman', icon: 'assets/skills/postman.png' },
-        { name: 'Bruno', icon: 'assets/skills/bruno.png' }
+        { name: 'IntelliJ', icon: 'assets/skills/software/intellij.png' },
+        { name: 'VS Code', icon: 'assets/skills/software/vscode.png' },
+        { name: 'Eclipse', icon: 'assets/skills/software/eclipse.png' },
+        { name: 'Git', icon: 'assets/skills/software/github.png' },
+        { name: 'Docker', icon: 'assets/skills/software/docker.png' },
+        { name: 'Jenkins', icon: 'assets/skills/software/jenkins.png' },
+        { name: 'Postman', icon: 'assets/skills/software/postman.png' },
+        { name: 'Bruno', icon: 'assets/skills/software/bruno.png' }
       ] },
     { name: 'Databases', skills: [
-        { name: 'PostgreSQL', icon: 'assets/skills/postgres.png' },
-        { name: 'MySQL', icon: 'assets/skills/mysql.png' },
-        { name: 'MongoDB', icon: 'assets/skills/mongodb.png' }
+        { name: 'PostgreSQL', icon: 'assets/skills/databsases/postgres.png' },
+        { name: 'MySQL', icon: 'assets/skills/databsases/mysql.png' },
+        { name: 'Cosmos DB', icon: 'assets/skills/databsases/cosmosdb.png' },
+        { name: 'MongoDB', icon: 'assets/skills/databsases/mongodb.png' }
       ]
     }
   ];
