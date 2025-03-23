@@ -35,13 +35,13 @@ h2 {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 skills per row */
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr); /* 4 skills per row */
+  gap: 30px;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
   margin: 0 auto;
-  max-width: 1200px; /* Optional to limit the width of the grid */
+  max-width: 1000px; /* Optional to limit the width of the grid */
 }
 
 .skill-card {
