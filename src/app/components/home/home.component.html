@@ -1,9 +1,10 @@
 <div class="home-container">
-  <div class="profile-picture">
-    <img src="assets/profile.png" alt="Profile Picture" />
-  </div>
-  <div class="profile-details">
-    <h1>Ioannis G. Koinaris</h1>
-    <p class="subtitle">{{ currentText }}<span class="cursor">|</span></p>
-  </div>
+  <img src="assets/profile.png" alt="Profile Picture" class="profile-img" />
+  <h1>Ioannis G. Koinaris</h1>
+  <p class="social-media">
+    <a *ngFor="let media of socialMedia" [href]="media.link" class="social-link">
+      <img [src]="media.icon" [alt]="media.name" class="social-icon" />
+    </a>
+  </p>
+  <p class="typewriter">{{ currentText }}</p>
 </div>

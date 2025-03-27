@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  socialMedia = [
+    { name: 'LinkedIn', icon: 'assets/contact/linkedin.png', link: 'https://www.linkedin.com/in/ikoinaris/' },
+    { name: 'Mail', icon: 'assets/contact/email.png', link:'mailto: i.koinaris@gmail.com' },
+    { name: 'GitHub', icon: 'assets/contact/git.png', link: 'https://github.com/ikoinaris' },
+  ];
+
   currentText: string = '';
   textIndex: number = 0;
   charIndex: number = 0;
@@ -43,7 +49,8 @@ export class HomeComponent implements OnInit {
   }
 
   typewriterTexts: string[] = [
-    'Software Engineer',
+    'Java Software Engineer',
+    'Java Tutor',
     'Certified Scrum Master'
   ];
 

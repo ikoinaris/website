@@ -7,49 +7,48 @@ import { Component } from '@angular/core';
 })
 export class SkillsComponent {
 
-  skillCategories = [
-    { name: 'Languages', skills: [
-        { name: 'Java', icon: 'assets/skills/java.png' },
-        { name: 'Typescript', icon: 'assets/skills/typescript.png' },
-        { name: 'JavaScript', icon: 'assets/skills/javascript.png' },
-        { name: 'HTML', icon: 'assets/skills/html.png' },
-        { name: 'CSS', icon: 'assets/skills/css.png' },
-        { name: 'Python', icon: 'assets/skills/python.png' }
+  expertiseAreas = [
+    { 
+      name: 'RESTful API Development', 
+      skills: [
+        { name: 'Java', icon: 'assets/skills/languages/java.png' },
+        { name: 'Spring', icon: 'assets/skills/frameworks/spring.png' },
+        { name: 'Quarkus', icon: 'assets/skills/frameworks/quarkus.png' },
+        { name: 'Node', icon: 'assets/skills/frameworks/node.png' },
       ]
     },
-    { name: 'Frameworks', skills: [
-        { name: 'Spring', icon: 'assets/skills/spring.png' },
-        { name: 'Quarkus', icon: 'assets/skills/quarkus.png' },
-        { name: 'Angular', icon: 'assets/skills/angular.png' },
-        { name: 'React', icon: 'assets/skills/react.png' },
-        { name: 'Node', icon: 'assets/skills/node.png' }
+    { 
+      name: 'Website Development', 
+      skills: [
+        { name: 'HTML', icon: 'assets/skills/languages/html.png' },
+        { name: 'CSS', icon: 'assets/skills/languages/css.png' },
+        { name: 'TypeScript', icon: 'assets/skills/languages/typescript.png' },
+        { name: 'Angular', icon: 'assets/skills/frameworks/angular.png' }
       ]
     },
-    { name: 'Software', skills: [
-        { name: 'IntelliJ', icon: 'assets/skills/intellij.png' },
-        { name: 'VS Code', icon: 'assets/skills/vscode.png' },
-        { name: 'Eclipse', icon: 'assets/skills/eclipse.png' },
-        { name: 'Git', icon: 'assets/skills/github.png' },
-        { name: 'Docker', icon: 'assets/skills/docker.png' },
-        { name: 'Jenkins', icon: 'assets/skills/jenkins.png' },
-        { name: 'Postman', icon: 'assets/skills/postman.png' },
-        { name: 'Bruno', icon: 'assets/skills/bruno.png' }
-      ] },
-    { name: 'Databases', skills: [
-        { name: 'PostgreSQL', icon: 'assets/skills/postgres.png' },
-        { name: 'MySQL', icon: 'assets/skills/mysql.png' },
-        { name: 'MongoDB', icon: 'assets/skills/mongodb.png' }
+    { 
+      name: 'CI/CD Orchestration', 
+      skills: [
+        { name: 'Git', icon: 'assets/skills/software/github.png' },
+        { name: 'Docker', icon: 'assets/skills/software/docker.png' },
+        { name: 'Jenkins', icon: 'assets/skills/software/jenkins.png' }
+      ]
+    },
+    { 
+      name: 'Cloud Services Management', 
+      skills: [
+        { name: 'AWS', icon: 'assets/skills/cloud/aws.png' },
+        { name: 'Azure', icon: 'assets/skills/cloud/azure.png' }
+      ]
+    },
+    { 
+      name: 'Database Management', 
+      skills: [
+        { name: 'PostgreSQL', icon: 'assets/skills/databases/postgres.png' },
+        { name: 'MySQL', icon: 'assets/skills/databases/mysql.png' },
+        { name: 'CosmosDb', icon: 'assets/skills/databases/cosmosdb.png' },
+        { name: 'MongoDB', icon: 'assets/skills/databases/mongodb.png' }
       ]
     }
   ];
-
-  currentSlideIndex = 0;
-
-  nextSlide() {
-    this.currentSlideIndex = (this.currentSlideIndex + 1) % this.skillCategories.length;
-  }
-
-  previousSlide() {
-    this.currentSlideIndex = (this.currentSlideIndex - 1 + this.skillCategories.length) % this.skillCategories.length;
-  }
 }

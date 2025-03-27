@@ -1,54 +1,57 @@
 .about-container {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  max-width: 1200px;
-  margin: 100px auto;
-  padding: 20px;
-  background-color: steelblue;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0a0a0a, #004d40);
   color: white;
+  padding: 20px;
+  text-align: left;
 }
 
-.profile-picture img {
-  width: 300px;
-  height: 300px;
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  max-width: 900px;
+}
+
+.profile-pic {
   border-radius: 50%;
-  border: 5px solid midnightblue;
-  margin-right: 30px;
+  width: 180px;
+  height: 180px;
+  border: 5px solid #66fcf1;
 }
 
-/* Text section */
 .about-text {
   max-width: 700px;
 }
 
 .about-text h1 {
   font-size: 36px;
-  color: lightgreen;
+  color: #66fcf1;
   margin-bottom: 20px;
 }
 
-.about-text p {
-  font-size: 18px;
+.text-content p {
+  margin: 10px 0;
   line-height: 1.6;
-  margin-bottom: 15px;
-  color: white;
 }
 
 .download-btn {
-  background-color: midnightblue;
-  color: white;
+  display: inline-block;
   padding: 10px 20px;
-  font-size: 16px;
+  background-color: #00b894;
+  color: white;
   font-weight: bold;
-  border-radius: 5px;
   text-decoration: none;
-  margin-top: 20px;
-  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 .download-btn:hover {
-  background-color: lightblue;
+  background-color: #008c72;
 }
 
 @media (max-width: 768px) {

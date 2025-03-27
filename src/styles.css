@@ -1,91 +1,20 @@
-/* Base styling for the background */
+/* Global background styling for all components */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: steelblue;
   color: white;
+  background: linear-gradient(120deg, #0a0a0a, #004d40);
+  min-height: 100vh;
 }
 
-/* Navigation bar */
-header {
-  background-color: steelblue;
-  color: midnightblue;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-}
-
-.nav-items {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 20px;
-  margin-top: 20px;
-}
-
-.nav-items li {
-  list-style: none;
-  margin-right: 20px;
-}
-
-.nav-items li a {
-  text-decoration: none;
-  color: midnightblue;
-  padding: 10px 15px;
-  transition: color 0.3s ease;
-}
-
-.nav-items li a:hover {
-  color: lightblue;
-}
-
-/* Mobile Menu */
-.hamburger-menu {
-  display: none;
-  cursor: pointer;
-}
-
-.mobile-menu {
-  display: none;
-  position: fixed;
-  right: 0;
-  top: 50px;
-  background-color: steelblue;
-  width: 200px;
-  height: 100vh;
-}
-
-.mobile-menu.active {
-  display: block;
-}
-
-.mobile-menu ul {
-  list-style: none;
+.app-container {
+  margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit; /* Ensure child components inherit the global background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
-.mobile-menu ul li {
-  padding: 15px 0;
-  text-align: center;
-}
-
-.mobile-menu ul li a {
-  text-decoration: none;
-  color: midnightblue;
-}
-
-/* Media query for responsiveness */
-@media (max-width: 768px) {
-  .nav-items {
-    display: none;
-  }
-
-  .hamburger-menu {
-    display: block;
-    position: fixed;
-    right: 10px;
-    top: 10px;
-    font-size: 30px;
-  }
-}
-@import '~mdb-angular-ui-kit/assets/scss/mdb.scss';
