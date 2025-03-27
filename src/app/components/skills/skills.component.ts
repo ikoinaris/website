@@ -15,6 +15,7 @@ export class SkillsComponent {
         { name: 'Spring', icon: 'assets/skills/frameworks/spring.png' },
         { name: 'Quarkus', icon: 'assets/skills/frameworks/quarkus.png' },
         { name: 'Node', icon: 'assets/skills/frameworks/node.png' },
+        { name: 'Postman', icon: 'assets/skills/software/postman.png' },
       ]
     },
     { 
