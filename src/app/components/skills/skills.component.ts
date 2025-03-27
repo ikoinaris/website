@@ -36,12 +36,17 @@ export class SkillsComponent {
         { name: 'Bruno', icon: 'assets/skills/software/bruno.png' }
       ] },
     { name: 'Databases', skills: [
-        { name: 'PostgreSQL', icon: 'assets/skills/databsases/postgres.png' },
-        { name: 'MySQL', icon: 'assets/skills/databsases/mysql.png' },
-        { name: 'Cosmos DB', icon: 'assets/skills/databsases/cosmosdb.png' },
-        { name: 'MongoDB', icon: 'assets/skills/databsases/mongodb.png' }
+        { name: 'PostgreSQL', icon: 'assets/skills/databases/postgres.png' },
+        { name: 'MySQL', icon: 'assets/skills/databases/mysql.png' },
+        { name: 'Cosmos DB', icon: 'assets/skills/databases/cosmosdb.png' },
+        { name: 'MongoDB', icon: 'assets/skills/databases/mongodb.png' }
       ]
-    }
+    },
+    { name: 'Cloud Providers', skills: [
+      { name: 'AWS', icon: 'assets/skills/cloud/aws.png' },
+      { name: 'Azure', icon: 'assets/skills/cloud/azure.png' }
+    ]
+  }
   ];
 
   currentSlideIndex = 0;
